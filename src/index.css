@@ -1,0 +1,18 @@
+@import 'tailwindcss';
+
+@layer base {
+  body {
+    font-family: 
+    sytem-ui,
+    -apple-system,
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: #907070;
+    background-image: url('logo.jpeg');
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-attachment:fixed; 
+  }
+}
