@@ -22,7 +22,7 @@ const Catalogo = () => {
                 </div>
                 <FloatingWhatsApp
                     avatar="logo.jpeg"
-                    phoneNumber = "+541144060260"
+                    phoneNumber = "+541135956611"
                     accountName = "AfterHours"
                     statusMessage= "Conectado"
                     chatMessage="Hola, decime el nombre del perfume que te interesa y te doy info ;)"
