@@ -1,4 +1,5 @@
 import fragance from "../data/mockData"
+import { FloatingWhatsApp } from 'react-floating-whatsapp'
 
 const Catalogo = () => {
 
@@ -19,6 +20,17 @@ const Catalogo = () => {
                   <p><strong className="text-gray-400">¿Cuando usuarlo?:</strong> {item.uso}</p>
                   <p><strong className="text-gray-400">Reseña:</strong> {item.comentario}</p>
                 </div>
+                <FloatingWhatsApp
+                    avatar="logo.jpeg"
+                    phoneNumber = "+541144060260"
+                    accountName = "AfterHours"
+                    statusMessage= "Conectado"
+                    chatMessage="Hola, decime el nombre del perfume que te interesa y te doy info ;)"
+                    onClick={() => window.open("https://wa.me/541144060260?text=Hola%20quiero%20info", "_blank")}
+                    allowEsc
+                    allowClickAway
+                    notification
+                  />
             </div>)
           })
         }
