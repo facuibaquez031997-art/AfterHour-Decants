@@ -85,12 +85,18 @@ interface Fragancia {
 const Catalogo = () => {
   // Número de WhatsApp unificado
   const WHATSAPP_NUMBER = "541135956611";
-
+  
   // Función para generar el link de WhatsApp personalizado por producto
   const handleOrder = (nombrePerfume: string) => {
-    const mensaje = encodeURIComponent(`Hola! Quiero consultar por el perfume: *${nombrePerfume}*`);
-    window.open(`https://wa.me{WHATSAPP_NUMBER}?text=${mensaje}`, "_blank");
-  };
+  const mensaje = `Hola! Quiero consultar por el perfume: *${nombrePerfume}*`;
+  
+  // Creamos la URL usando el constructor nativo para evitar fallos de formato
+  const urlApi = new URL(`https://wa.me{WHATSAPP_NUMBER}`);
+  urlApi.searchParams.append("text", mensaje);
+
+  // urlApi.href generará exactamente: https://wa.me!...
+  window.open(urlApi.href, "_blank");
+};
 
   return (
     <>
