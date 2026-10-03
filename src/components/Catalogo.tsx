@@ -26,7 +26,7 @@ const Catalogo = () => {
                     accountName = "AfterHours"
                     statusMessage= "Conectado"
                     chatMessage="Hola, decime el nombre del perfume que te interesa y te doy info ;)"
-                    onClick={() => window.open("https://wa.me/541144060260?text=Hola%20quiero%20info", "_blank")}
+                    onClick={() => window.open("https://wa.me/541135956611?text=Hola%20quiero%20info:", "_blank")}
                     allowEsc
                     allowClickAway
                     notification
