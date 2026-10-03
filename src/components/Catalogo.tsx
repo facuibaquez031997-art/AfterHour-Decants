@@ -130,7 +130,7 @@ const Catalogo = () => {
       {/* Botón Flotante General (Se renderiza una sola vez al final del componente) */}
       <FloatingWhatsApp
         avatar="logo.jpeg" // Recuerda la barra inicial si está en la carpeta public
-        phoneNumber="541135956611"
+        phoneNumber={WHATSAPP_NUMBER}
         accountName="AfterHours"
         statusMessage="Conectado"
         chatMessage="Hola, decime el nombre del perfume que te interesa y te doy info ;)"
