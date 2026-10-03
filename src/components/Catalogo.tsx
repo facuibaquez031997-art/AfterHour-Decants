@@ -87,7 +87,7 @@ const Catalogo = () => {
   // Función para generar el link de WhatsApp personalizado por producto
   const handleOrder = (nombrePerfume: string) => {
   
-  const mensaje = ` *${nombrePerfume}*`;
+  const mensaje = `Hola, me pasas información de este perfume: *${nombrePerfume}*`;
   
   // Creamos la URL usando el constructor nativo para evitar fallos de formato
   const urlApi = new URL("https://wa.me/541135956611?text=Hola%20quiero%20info:");
